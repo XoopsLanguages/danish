@@ -1,0 +1,1 @@
+tinyMCE.addI18n('da.paste_dlg',{text_title:"Brug CTRL + V på dit tastatur til at indsætte teksten i vinduet.",text_linebreaks:"Hold linjeskift",word_title:"Brug CTRL + V på dit tastatur til at indsætte teksten i vinduet."});
