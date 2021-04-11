@@ -1,0 +1,1 @@
+tinyMCE.addI18n('da.emotions_dlg',{title:"Indsæt emotion",desc:"Emotions",cool:"Sej",cry:"Græder",embarassed:"Flov",foot_in_mouth:"Øvler",frown:"Rynker panden",innocent:"Uskyldig",kiss:"Kys",laughing:"Griner",money_mouth:"Dyr tale",sealed:"Lukket",smile:"Smiler",surprised:"Overrasket",tongue_out:"Rækker tunge",undecided:"Usikker",wink:"Blink",yell:"Råber"});
