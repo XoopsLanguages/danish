@@ -10,7 +10,7 @@
  * @package		xoopseditor
  */
 /*
- * Assocated with editor_registry.php
+ * Associated with editor_registry.php
  */ Ãƒâ€  - ÃƒËœ - Ãƒâ€¦ 
 define("_XOOPS_EDITOR_DHTMLTEXTAREA","DHTML med xCode");
 ?>

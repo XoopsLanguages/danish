@@ -1,0 +1,111 @@
+{
+  "language": "danish",
+  "code": "da",
+  "name": "Danish",
+  "nativeName": "Dansk",
+  "rtl": false,
+  "maintainers": [
+    "XoopsLanguages Team"
+  ],
+  "core": {
+    "2.3.1_utf8": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.3.1_utf8.zip"
+    },
+    "2.3.2a_utf8": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.3.2a_utf8.zip"
+    },
+    "2.3.2b_utf8": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.3.2b_utf8.zip"
+    },
+    "2.3.3RC_utf8": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.3.3RC_utf8.zip"
+    },
+    "2.3.3_utf8": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.3.3_utf8.zip"
+    },
+    "2.4": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.4.zip"
+    },
+    "2.4.1": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.4.1.zip"
+    },
+    "2.4.2": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.4.2.zip"
+    },
+    "2.4.3": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.4.3.zip"
+    },
+    "2.4.4": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.4.4.zip"
+    },
+    "2.4.5": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.4.5.zip"
+    },
+    "2.4.5-rc": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.4.5-rc.zip"
+    },
+    "2.4.5-rc2": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.4.5-rc2.zip"
+    },
+    "2.5.0": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.5.0.zip"
+    },
+    "2.5.0-alpha1": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.5.0-alpha1.zip"
+    },
+    "2.5.11": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.5.11.zip"
+    },
+    "2.5.3": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.5.3.zip"
+    },
+    "2.5.4": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.5.4.zip"
+    },
+    "2.5.5": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.5.5.zip"
+    },
+    "2.5.7.1": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.5.7.1.zip"
+    },
+    "2.5.9": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.5.9.zip"
+    },
+    "2.6.0 Alpha-1": {
+      "lifecycle": "eol",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.6.0 Alpha-1.zip"
+    },
+    "2.7.0": {
+      "lifecycle": "active",
+      "coverage": 98.1,
+      "provided": 3040,
+      "required": 3098,
+      "updated": "2026-05-04",
+      "download": "https://github.com/XoopsLanguages/danish/releases/download/latest/danish-core-2.7.0.zip",
+      "manifest_url": "https://raw.githubusercontent.com/XoopsLanguages/danish/master/manifest.json"
+    }
+  },
+  "modules": {},
+  "themes": {}
+}

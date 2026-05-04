@@ -1,0 +1,59 @@
+<div class="outer" id="help-template">
+<h1 class="head">Hjælp: Præferencer</h1>
+<h4 class="odd">Beskrivelse</h4>
+<p class="even">
+        Præferencepanelerne er der, hvor du konfigurerer dine præferencer for hele webstedet. Det er værd at tage sig tid til at gennemarbejde dem, da nogle indstillinger kan have en betydelig indvirkning på ydeevnen, sikkerheden og brugervenligheden af ​​dit websted.
+    </p>
+<h4 class="odd">Generelle indstillinger</h4>
+<p class="even">
+        Dette er de vigtigste og mest tilgængelige præferencer. Du skal angive webstedets navn og sloganet for dit websted. Du skal også vælge standardtemaet og Admin GUI. Og hvis du skal arbejde på din hjemmeside, kan du lukke den for alle brugere. Du kan også indstille moduldækkende cache
+        gange.
+    </p>
+<h4 class="odd">Metatags og sidefod</h4>
+<p class="even">
+        Metatags giver information om dine oplysninger – de beskriver arten af din hjemmeside. Deres hovedanvendelse er at hjælpe søgemaskiner og deres robotter med at indeksere dit websted korrekt, det vil sige at hjælpe de rigtige mennesker med at finde det. De oplysninger, du giver, er inkluderet i overskriften på hver web
+        side. Det bør repræsentere indholdet af webstedet som helhed - metainformationen er den samme på hver side, den kan i øjeblikket ikke tilpasses til forskellige moduler eller sider.<br/><br/>
+
+        Vær opmærksom på, at de store søgemaskiner bruger forskellige strategier til at indeksere websteder. De kan placere forskellige vægtninger på metatags eller endda ignorere dem fuldstændigt. Omhyggelig brug af metainformation kan hjælpe dit websted med at opnå bedre placeringer i søgemaskinerne, og det er nyttigt at søge
+        oplysninger om indekseringsstrategierne for dine dominerende henvisninger (se din hjemmesidelogfil). Dette kan hjælpe dig med at optimere dine metaoplysninger eller andre aspekter af dit websteds design og indhold for at forbedre dine placeringer. <br/><br/>
+
+        Prøv at være præcis og ærlig i at give metainformation. Forsøg ikke at '<em>manipulere</em>’ søgemaskiner for at opnå en bedre placering – de genkender muligvis denne adfærd, og dit websted kan blive nedgraderet eller sortlistet fra deres indeks.
+
+        <br/><br/>Den <strong>Meta Copyright</strong> og <strong>Sidefod</strong> felter understøtter begge to substitution tags for at forenkle vedligeholdelsen.
+        <br/> - <strong>{X_SITEURL}</strong> vil blive erstattet af den fulde URL til dit websteds hovedside.
+        <br/> - <strong>{X_YEAR}</strong> vil blive erstattet af det nuværende firecifrede årstal. Det eliminerer behovet for at opdatere den øverste copyright-dato hvert år.
+    </p>
+<h4 class="odd">Indstillinger for ordcensurering</h4>
+<p class="even">
+        XOOPS kan automatisk censurere uønskede ord, som kan blive postet af besøgende på dit websted og erstatte dem med en generisk, alternativ term efter eget valg. Censurfunktionen bruger nogle systemressourcer og kan gøre dit websted en smule langsommere. Den er som standard deaktiveret.<br/><br/>
+
+        For at implementere censur på dit websted skal du vælge '<em>aktivere</em>’ radioknap. Du skal indtaste en liste over uønskede ord i '<em>ord til censurering</em>’-boks, der adskiller dem med pibekarakteren. Denne funktion skelner mellem store og små bogstaver. Indtast et passende erstatningsudtryk i '<em>udskift
+            dårlige ord med</em>’ boks. Standard er #OOPS#.
+
+    </p>
+<h4 class="odd">Søgeindstillinger</h4>
+<p class="even">
+        Søgefaciliteten er et af de vigtigste værktøjer til at lokalisere information på et portalwebsted. XOOPS-søgningen kategoriserer resultater efter modul - poster identificeres som nyheder, downloads, links eller andre typer i henhold til de moduler, du har installeret. <br/><br/>
+
+        Globale søgninger af alle ressourcer på dit websted er aktiveret som standard. Hvis du deaktiverer globale søgninger, vil denne funktion ikke længere være tilgængelig, og søgeblokken bliver ikke-funktionel.
+        Standard minimum søgeordslængde for søgninger er fem tegn. Alle vilkår, der er kortere, vil blive ignoreret. Dette er nyttigt til at kontrollere nøjagtigheden af ​​søgninger, men ikke meget brug for udtryk som "webstedsoversigt". Korte søgeord har en tendens til at være mere almindelige, så de har en tendens til at returnere en større
+        antal poster, hvoraf mange kan være irrelevante. Længere søgeord har en tendens til at hente færre poster, men med en højere grad af præcision.<br/><br/>
+
+        At søge er relativt dyrt i beregningsmæssig henseende, og at ekskludere korte termer vil derfor reducere belastningen på serveren. Men husk på, at det nogle gange er nyttigt at kunne søge efter en kort sigt.
+
+    </p>
+<h4 class="odd">Opsætning af e-mail</h4>
+<p class="even">
+        Denne sektion af kontrolpanelet bruges til at konfigurere din e-mail til systemet. Det anbefales, at du lader e-mailleveringsmetoden stå på standardindstillingen "PHP (mail)". Du behøver ikke at udfylde Sendmail- eller SMTP-felterne, medmindre du bruger en alternativ e-mail-leveringsmulighed.
+    </p>
+<h4 class="odd">Godkendelsesindstillinger</h4>
+<p class="even">
+        Bare lad det ligge i Xoops Database, og du kan ignorere alle de andre muligheder derinde.<br/><br/>
+
+        LDAP- eller Microsoft Active Directory-servere er blevet tilføjet til godkendelse som en alternativ til de normale Xoops-brugere. Årsagen er, at man i mange virksomheder allerede har en brugerdatabase i ADS eller LDAP, og de kan bruge den til at logge på XOOPS og behøver ikke at registrere endnu en konto.
+    </p>
+<h4 class="odd">Systemmodulindstillinger</h4>
+<p class="even">
+        Her kan du aktivere/deaktivere hver af Systemsektionerne, samt angive system-dækkende standardindstillinger, f.eks. for antallet af viste avatarer eller billeder pr. side. Du kan også vælge en standardeditor til blokke, kommentarer og for alle moduler.
+    </p>
+</div>
