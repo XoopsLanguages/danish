@@ -1,0 +1,135 @@
+html OFFENTLIG "-//W3C//DTD HTML 4.01 Transitional//EN"
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>XOOPS installationsvejledning</title>
+<meta content="XOOPS" name="keywords"/>
+<meta content="XOOPS installation guide" name="description"/>
+<style type="text/css">
+        body {
+            font-family:                        Lucida Grande, Verdana, Geneva, Sans-serif;
+            margin:                             0;
+            padding:                            0;
+            font-size:                          13px;
+            color:                              #333;
+            background-color:                   #fff;
+        }
+
+        a {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+            font-weight:                        normal;
+        }
+
+        a:visited {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+        }
+
+        a:hover {
+            color:                              #3D9DD3;
+            text-decoration:                    none;
+            background-color:                   transparent;
+        }
+
+        .page {
+            background-color:                   #fff;
+            margin:                             10px 30px 0;
+            padding:                            0;
+        }
+
+        .page h1 {
+            background-color:                   transparent;
+            border-bottom:                      1px solid #999;
+            color:                              #000;
+            font-size:                          18px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h2 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          16px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h3 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          14px;
+            font-weight:                        bold;
+        }
+
+        .page ul {
+            margin:                             20px 0 15px 0;
+        }
+
+        .page li {
+            margin-bottom:                      9px;
+        }
+
+        .page li p {
+            margin-left:                        0;
+            margin-right:                       0;
+        }
+
+        p {    }
+
+    </style>
+</head>
+<body>
+<div class="page">
+<h1>Installation af XOOPS</h1>
+<h2>Førstegangsinstallation</h2>
+<h3>Forord:</h3>
+<p>
+<abbr title="eXtensible Object-Oriented Portal System">XOOPS</abbr> er en open source
+        Objektorienteret webpubliceringssystem skrevet i PHP. Det er et ideelt værktøj til
+        udvikling af små til store dynamiske community-websteder, interne virksomhedsportaler, virksomhedsportaler, weblogs og meget mere.
+    </p>
+<p>
+        XOOPS frigives i henhold til vilkårene i
+        <a href="https://www.gnu.org/licenses/gpl-2.0.html" rel="external">GNU General Public License (GPL)</a>
+        version 2 eller nyere, og er gratis at bruge og ændre.
+        Det er gratis at videredistribuere, så længe du overholder distributionsbetingelserne i GPL.
+    </p>
+<h2>Krav</h2>
+<ul>
+<li>WWW Server (<a href="http://www.apache.org/" rel="external">Apache</a>, <a href="https://www.nginx.com/" rel="external" s="">NGINX</a>, IIS osv.)</li>
+<li><a href="https://www.php.net/" rel="external">PHP</a> 8.2 eller højere, 8.4+ anbefales</li>
+<li><a href="https://www.mysql.com/" rel="external">MySQL</a> 5.7 .8 eller højere, MySQL 8.4.5+ anbefales</li>
+</ul>
+<h3>Før du installerer</h3>
+<ol>
+<li>Konfigurer WWW-server, PHP og databaseserver korrekt.</li>
+<li>Forbered en database til din XOOPS-side.</li>
+<li>Forbered brugerkonto og giv brugeren adgang til databasen.</li>
+<li>Gør mapperne og filerne skrivbare: %s</li>
+<li>Af sikkerhedshensyn anbefales det kraftigt at flytte de to nedenstående mapper ud af <a href="http://phpsec.org/projects/guide/3.html" rel="external">dokumentrod</a> og skift mappenavnene: %s</li>
+<li>Opret (hvis ikke allerede til stede) og gør mapperne skrivbare: %s</li>
+<li>Slå din browsers cookie og JavaScript til.</li>
+</ol>
+<h2>Installerer lokalt</h2>
+<p>Hvis du kører et lokalt miljø til udvikling eller test, så sørg for at have det tidligere
+    krav opfyldt. Når dette er gjort, skal du kopiere indholdet af <em>htdocs</em> bibliotek (fra XOOPS
+    distributionsfil) til roddokumentstien til dit webmiljø. Når filerne er kopieret dertil,
+    du kan starte installationen ved at pege din browser til "http://<em>dit websted.com</em>". Dette starter installationsprocessen.
+</p>
+<h2>Installation på en hostet platform</h2>
+<p>Hvis du kører i et hostet miljø, skal du pakke XOOPS-filerne ud lokalt eller på serveren, hvis du har
+    shell (dvs. SSH) adgang. Når det er gjort, skal du sørge for at flytte eller kopiere alle XOOPS-filer fra <em>htdocs</em>
+    bibliotek til din rodwebmappe (din udbyder giver normalt denne placering med retninger).
+    Når filerne er kopieret dertil, kan du starte installationen ved at pege på din browser
+    "http://<em>dit websted.com</em>". Dette starter installationsprocessen.
+</p>
+<h2>Fortsætter installationen</h2>
+<p>Bare følg trin-for-trin instruktionerne i installationsprogrammet.</p>
+</div>
+</body>
+</html>
