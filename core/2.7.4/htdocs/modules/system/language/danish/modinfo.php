@@ -1,0 +1,80 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    da
+ * _CHARSET     UTF-8
+ */
+define('_MI_SYSTEM_NAME', 'System');
+define('_MI_SYSTEM_DESC', 'Til administration af indstillinger på selve siden.');
+define('_MI_SYSTEM_BNAME2', 'Bruger Menu');
+define('_MI_SYSTEM_BNAME3', 'Log ind');
+define('_MI_SYSTEM_BNAME4', 'Søg');
+define('_MI_SYSTEM_BNAME5', 'Afventende Indhold');
+define('_MI_SYSTEM_BNAME6', 'Hoved menu');
+define('_MI_SYSTEM_BNAME7', 'Side information');
+define('_MI_SYSTEM_BNAME8', 'Hvem er Online');
+define('_MI_SYSTEM_BNAME9', 'Mest aktive');
+define('_MI_SYSTEM_BNAME10', 'Nye medlemmer');
+define('_MI_SYSTEM_BNAME11', 'Seneste kommentarer');
+define('_MI_SYSTEM_BNAME12', 'Notifikations Valg');
+define('_MI_SYSTEM_BNAME13', 'Temaer');
+define('_MI_SYSTEM_ADMENU1', 'Bannere');
+define('_MI_SYSTEM_ADMENU2', 'Blokke');
+define('_MI_SYSTEM_ADMENU3', 'Grupper');
+define('_MI_SYSTEM_ADMENU5', 'Moduler');
+define('_MI_SYSTEM_ADMENU6', 'Indstillinger');
+define('_MI_SYSTEM_ADMENU7', 'Smileys');
+define('_MI_SYSTEM_ADMENU9', 'Bruger ranks');
+define('_MI_SYSTEM_ADMENU10', 'Redigér bruger');
+define('_MI_SYSTEM_ADMENU11', 'Mail brugere');
+define('_MI_SYSTEM_ADMENU12', 'Find Bbugere');
+define('_MI_SYSTEM_ADMENU13', 'Billeder');
+define('_MI_SYSTEM_ADMENU14', 'Avatarer');
+define('_MI_SYSTEM_ADMENU15', 'Skabeloner');
+define('_MI_SYSTEM_ADMENU16', 'Kommentarer');
+define('_MI_SYSTEM_PREFERENCE_BREAK_GENERAL', 'Generelle indstillinger');
+define('_MI_SYSTEM_PREFERENCE_TIPS', 'Hjælp online?');
+define('_MI_SYSTEM_PREFERENCE_TIPS_DSC', 'Dette giver dig tips og online hjælp');
+define('_MI_SYSTEM_PREFERENCE_ICONS', 'Ikoner');
+define('_MI_SYSTEM_PREFERENCE_BREADCRUMB', 'Brødkrumme');
+define('_MI_SYSTEM_PREFERENCE_BREAK_ACTIVE', 'Aktivér sektioner');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_AVATARS', 'Aktivér avatars');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BANNERS', 'Aktivér bannere');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BLOCKSADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_COMMENTS', 'Aktivér kommentarer');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_FILEMANAGER', 'Aktivér Fil vedligeholdelse');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_GROUPS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_IMAGES', 'Aktivér billeder vedligeholdelse');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAILUSERS', 'Aktivér mail-brugere');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MODULESADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_PREFERENCES', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_SMILIES', 'Aktivér smilies');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_TPLSETS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERRANK', 'Aktivér bruger Ranks');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERS', 'Aktivér brugere');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAINTENANCE', 'Aktivér vedligeholdelse');
+define('_MI_SYSTEM_PREFERENCE_BREAK_PAGER', 'Antal rækker der skal vises i administrationen');
+define('_MI_SYSTEM_PREFERENCE_AVATARS_PAGER', 'Antallet af avatarer der skal vises pr side');
+define('_MI_SYSTEM_PREFERENCE_BANNERS_PAGER', 'Antallet af bannere der skal vises pr side');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_PAGER', 'Antallet af kommentarer der skal vises pr side');
+define('_MI_SYSTEM_PREFERENCE_GROUPS_PAGER', 'Antallet af grupper der skal vises pr side');
+define('_MI_SYSTEM_PREFERENCE_IMAGES_PAGER', 'Antallet af billeder der skal vises pr side');
+define('_MI_SYSTEM_PREFERENCE_SMILIES_PAGER', 'Antallet af smilies der skal vises pr side');
+define('_MI_SYSTEM_PREFERENCE_USERRANKS_PAGER', 'Antallet af rækker der skal vises pr side');
+define('_MI_SYSTEM_PREFERENCE_USERS_PAGER', 'Antallet af brugere der skal vises pr side');
+define('_MI_SYSTEM_PREFERENCE_BREAK_EDITOR', 'Editor indstillinger');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR', 'Editor for blokke:');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR', 'Editor for kommentarer:');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR', 'Editor for alle moduler:');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_ANONPOST', '');
+define('_MI_SYSTEM_PREFERENCE_REDIRECT', '');
+define('_MI_SYSTEM_PREFERENCE_JQUERY_THEME', 'jQuery tema');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Deaktiver midlertidigt');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'E-mail');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Privat besked');
+define('_MI_SYSTEM_MENUS_ACTIVE', 'Aktiver menusystem');
+define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Aktiver det indbyggede menustyringssystem til webstedsnavigation');

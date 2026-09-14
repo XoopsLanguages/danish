@@ -1,0 +1,36 @@
+<div class="outer" id="help-template">
+<h1 class="head">Hjælp: Skabeloner</h1>
+<h4 class="odd">Beskrivelse</h4>
+<p class="even">
+        XOOPS giver mulighed for en vis adskillelse mellem den faktiske præsentation af webstedet (den "<em>hud</em>” eller brugergrænseflade) og koden, der kører bagerst. Den første håndteres af en sofistikeret mekanisme baseret på grafiske temaer. Et tema kan i sin grundlæggende form indeholde den essentielle HTML
+        skabeloner, der definerer webstedets visuelle grænseflade, såvel som de stilark og billeder, der er nødvendige for at komplementere den visuelle grænseflade. Temaer kan skiftes i den administrative grænseflade, så hvis du ændrer hele udseendet af et XOOPS-websted, er det bare et spørgsmål om at ændre værdien af en
+        vælgeren og klik på "Accepter". XOOPS giver også webstedsadministratorer mulighed for at lade brugerne vælge blandt nogle tilgængelige temaer.<br/><br/>
+
+        Generelt set, en <strong><em>tema</em></strong> er et websteds visuelle ramme på højt niveau: temaet definerer f.eks. webstedets generelle layout; på den anden side definerer det normalt ikke den specifikke distribution af indhold inden for en blok. Dette varetages af en
+        anden enhed kaldet en <em><strong>skabelonsæt</strong></em>. Et skabelonsæt<em> </em>er et ensemble af HTML-skabeloner, der definerer præsentationen af ​​indhold inden for alle de blokke, der danner et XOOPS-websted. Hvis vi ønsker en mere klar metafor for dette, kan vi sige, at temaet er ligesom
+        arkitekten af et hus, mens skabelonsættet er som indretningsarkitekten. Den første sætter murene og definerer den generelle fordeling, men det er den anden, der har ansvaret for "<em>dressing</em>” de vægge.<br/><br/>
+
+        Hvis det aktive tema er et simpelt tema, der kun inkluderer en temafil, CSS-filer og nogle billeder, anvender XOOPS standardskabelonsættet til at definere præsentationen af ​​blokke. Nogle komplekse temaer er dog sofistikerede nok til at inkludere deres eget skabelonsæt. I dette tilfælde webstedet
+        administrator skal bruge den administrative grænseflade til at indstille både temaet og skabelonsættet. <br/><br/>
+
+        Hvordan er temaet <em>magi</em> gennemført? Det vil sige, hvordan kan HTML-skabeloner indeholde dynamisk indhold? Dette gøres ikke med spejle og røg, men med en smart skabelonmotor kaldet
+        <strong><a href="https://www.smarty.net/" rel="external">Smarty</a></strong> , der gør funktionen af det, der plejede at blive kaldt
+        <em><strong>variabel interpolation</strong></em>. Udtrykt på en enkel måde kan vi sige, at XOOPS-systemet bruger PHP-filer til at holde modulernes logik (adgang til databasen, tildeling af variabler, styring af rettigheder...), HTML-filer med Smarty-variabler indsat for at administrere
+        faktiske visuelle grænseflade, og Smarty-motoren til at indsætte værdier og strenge på bestemte steder i HTML'en, der bygger siderne set af slutbrugeren. Alt i alt kan det nemt opsummeres, hvad dette betyder for dig: Takket være dets temasystem lader XOOPS webstedsdesignere bygge mere
+        interessante og visuelt forbløffende steder uden stor bekymring for, hvad der sker under motorhjelmen.
+    </p>
+<h4 class="odd">Kloning og download af skabelonsæt</h4>
+<p class="even">
+        Hvis du gerne vil oprette et brugerdefineret skabelonsæt, kan du lave en kopi af standardsættet (eller et hvilket som helst andet) ved at vælge '<em>klon</em>’ link (du bliver bedt om at give det nye sæt et navn). I modsætning til standarden kan andre skabelonsæt frit redigeres. Du kan også gemme en kopi af en
+        skabelon sat til disk ved at vælge '<em>download</em>'-linket, eller fjern det med '<em>slet</em>’ link. Du kan også nogle gange se en ekstra '<em>Generer</em>’ link ud for nye moduler, som der endnu ikke er oprettet skabeloner til.
+    </p>
+<h4 class="odd">Redigering af skabeloner</h4>
+<p class="even">
+        Du kan se en komplet liste over tilgængelige skabeloner ved at gennemse bibliotekets trævisning. Når du vælger en skabelon, åbner XOOPS den i en editor, hvor du kan redigere den. <br/><br/>
+
+        Mens du redigerer skabeloner, skal du aktivere en præference, der automatisk opdaterer modulskabelon .tpl-filer, hvis der er nyere filer under mappen temaer/dit tema/skabeloner for det aktuelle tema (Systemmodul -&gt; Præferencer -&gt; Generelle indstillinger -&gt; Opdater modulskabelon .tpl-filer
+        fra mappen temaer/dit tema/skabeloner? -&gt; '<em>Ja</em>’). Dette bør slås fra, når webstedet bliver offentligt.<br/><br/>
+        Hvis du ved et uheld ødelægger en skabelon, så glem ikke, at du kan hente en '<em>godt</em>’ kopi fra standardskabelonsættet. Hvis du arbejder med ikke-standard skabeloner, kan det være en god idé at gemme en kopi på disken, før du begynder at ændre dem.
+
+    </p>
+</div>

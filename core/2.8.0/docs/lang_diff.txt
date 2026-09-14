@@ -1,0 +1,860 @@
+SPROGSFORSKELLE
+=====================
+
+Nedenfor er sprogforskelle fra en version til næste version.
+
+================================
+2026/09: Version 2.8.0-Alpha1
+================================
+
+/htdocs/modules/system/language/english/modinfo.php
+- tilføjet define('_MI_SYSTEM_PREFERENCE_ACTIVE_LANGUAGES', 'Enable Languages administration');
+- tilføjet define('_MI_SYSTEM_PREFERENCE_ACTIVE_LANGUAGES_DESC', 'Manage the locale registry, language packs, health checks, and site translation overrides.');
+- tilføjet define('_MI_SYSTEM_BNAME14', 'Language Switcher');
+
+/htdocs/modules/system/language/english/admin.php
+- tilføjet define('_AM_SYSTEM_LANGUAGES', 'Languages');
+- tilføjet define('_AM_SYSTEM_LANGUAGES_DESC', 'Manage installed UI locales, language-pack status, and site translation overrides.');
+
+================================
+2026/09: Version 2.7.4-Beta2
+================================
+/htdocs/modules/profile/language/english/admin.php
+- tilføjet define('_PROFILE_AM_DELETE_FAILED', 'Deleting %s failed; the account was not removed');
+
+/htdocs/modules/system/language/english/admin/preferences.php
+- tilføjet define('_MD_AM_TWOFACTORMODE', 'Two-factor authentication');
+- tilføjet define('_MD_AM_TWOFACTORMODEDSC', 'Off pauses every second-factor challenge while keeping each member\'s enrolment. Optional lets members enrol an authenticator app or e-mail codes, and challenges members who have enrolled.');
+- tilføjet define('_MD_AM_TWOFACTORMODE_OFF', 'Off (paused)');
+- tilføjet define('_MD_AM_TWOFACTORMODE_OPTIONAL', 'Optional');
+
+/htdocs/language/english/user2fa.php (ny fil)
+- tilføjet define('_US_2FA_HTTP_LOGIN', 'This popup cannot complete a two-factor login over HTTP because your password would be sent without encryption. Use the site login instead, or ask the administrator to enable HTTPS for the site.');
+- tilføjet define('_US_2FA_TITLE', 'Second step');
+- tilføjet define('_US_2FA_PROMPT', 'Enter the code from your authenticator app');
+- tilføjet define('_US_2FA_CODE', 'Authenticator code');
+- tilføjet define('_US_2FA_PROMPT_EMAIL', 'We sent a six-digit code to %s. Enter it below.');
+- tilføjet define('_US_2FA_CODE_EMAIL', 'Code from your e-mail');
+- tilføjet define('_US_2FA_SEND', 'Send a new code');
+- tilføjet define('_US_2FA_SENT', 'A new code was sent to %s. It is valid for ten minutes.');
+- tilføjet define('_US_2FA_SEND_WAIT', 'A code was sent less than a minute ago. Check your inbox and spam folder before requesting another one.');
+- tilføjet define('_US_2FA_SEND_FAILED', 'The code could not be sent right now. Try again in a moment, or use a recovery code.');
+- tilføjet define('_US_2FA_EMAIL_SUBJECT', '%s: your sign-in code');
+- tilføjet define('_US_2FA_EMAIL_BODY', 'Your sign-in code for %s is:\n\n%s\n\nIt is valid for %d minutes and works once. If you did not request it, ignore this message and consider changing your password.');
+- tilføjet define('_US_2FA_RECOVERY', 'Use a recovery code instead');
+- tilføjet define('_US_2FA_RECOVERY_HINT', 'Each recovery code works once. Using one sends you an e-mail.');
+- tilføjet define('_US_2FA_SUBMIT', 'Continue');
+- tilføjet define('_US_2FA_STARTAGAIN', 'This sign-in has expired or was interrupted. Please start again.');
+- tilføjet define('_US_2FA_BACKTOLOGIN', 'Back to the login form');
+- tilføjet define('_US_2FA_BADCODE', 'That code was not accepted.');
+- tilføjet define('_US_2FA_LOCKED', 'Too many attempts. The second step is locked for fifteen minutes; a recovery code still works.');
+- tilføjet define('_US_2FA_UNAVAILABLE', 'The second step is not available right now. A recovery code still works, or contact the site administrator.');
+- tilføjet define('_US_2FA_REQUIRED', 'This account has two-factor authentication enabled. Please sign in through the site\'s login page.');
+- tilføjet define('_US_2FA_LOCKED_MAIL_SUBJECT', '%s: second step locked');
+- tilføjet define('_US_2FA_LOCKED_MAIL_BODY', 'Five wrong second-step codes were entered for your account at %s from %s. The second step is locked for fifteen minutes. If this was not you, change your password.');
+- tilføjet define('_US_2FA_RECOVERY_MAIL_SUBJECT', '%s: a recovery code was used');
+- tilføjet define('_US_2FA_RECOVERY_MAIL_BODY', 'A recovery code was used to sign in to your account at %s from %s. That code no longer works. If this was not you, change your password and reset your recovery codes.');
+
+/htdocs/language/english/user2famanage.php (ny fil)
+- tilføjet define('_US_2FAM_TITLE', 'Two-factor authentication');
+- tilføjet define('_US_2FAM_PASSWORD', 'Your current password');
+- tilføjet define('_US_2FAM_ENABLE', 'Set up an authenticator');
+- tilføjet define('_US_2FAM_CONFIRM', 'Confirm authenticator');
+- tilføjet define('_US_2FAM_CHOOSE', 'Choose how you want to receive your second step: an authenticator app, or a code by e-mail.');
+- tilføjet define('_US_2FAM_ENABLE_EMAIL', 'Use e-mail codes');
+- tilføjet define('_US_2FAM_EMAIL_HELP', 'E-mail codes: a six-digit code is sent to %s each time you sign in. Less secure than an authenticator app, because anyone who can read your e-mail can pass this step.');
+- tilføjet define('_US_2FAM_EMAIL_STEP', 'We sent a six-digit code to %s. Enter it below to confirm. It is valid for ten minutes.');
+- tilføjet define('_US_2FAM_CONFIRM_EMAIL', 'Confirm e-mail codes');
+- tilføjet define('_US_2FAM_CODE_HELP_EMAIL', 'The six-digit code from the e-mail we just sent you.');
+- tilføjet define('_US_2FAM_ENABLED_EMAIL', 'E-mail codes are enrolled. To make a change, enter your current password and the code we e-mail you, or a recovery code. Use the button below to request a code.');
+- tilføjet define('_US_2FAM_SEND', 'Send me a code');
+- tilføjet define('_US_2FAM_MANUAL', 'Manual setup key');
+- tilføjet define('_US_2FAM_SCAN', 'QR code for your authenticator app');
+- tilføjet define('_US_2FAM_STEP_APP', 'You need an authenticator: any app or password manager that generates time-based one-time codes (TOTP) will work, on your phone or computer. If you do not have one yet, install one of your choice first (e.g. Google Authenticator, Microsoft Authenticator, Aegis or FreeOTP).');
+- tilføjet define('_US_2FAM_STEP_ADD', 'In the app, add an account: scan this QR code, or choose manual entry and type the setup key shown below it.');
+- tilføjet define('_US_2FAM_STEP_CODE', 'The app now shows a six-digit code that changes every 30 seconds. Type the code it shows right now into the field below and confirm.');
+- tilføjet define('_US_2FAM_CODE_HELP', 'The six-digit code your authenticator app shows right now.');
+- tilføjet define('_US_2FAM_HTTP', 'This connection uses plain HTTP. Your password, session, authenticator setup key and recovery codes can be intercepted. Use HTTPS whenever possible.');
+- tilføjet define('_US_2FAM_CODES', 'Save these recovery codes now');
+- tilføjet define('_US_2FAM_CODES_HELP', 'Each code works once. These codes will not be displayed again. Keep them somewhere safe, separate from this account.');
+- tilføjet define('_US_2FAM_DISABLE', 'Disable two-factor authentication');
+- tilføjet define('_US_2FAM_REGENERATE', 'Replace recovery codes');
+- tilføjet define('_US_2FAM_ENABLED', 'An authenticator is enrolled. Enter your current password and an authenticator or recovery code to make a change.');
+- tilføjet define('_US_2FAM_DISABLED', 'Two-factor authentication is disabled.');
+- tilføjet define('_US_2FAM_PAUSED', 'The site has paused two-factor challenges. Your factor is kept, and remember-me remains unavailable for enrolled accounts.');
+- tilføjet define('_US_2FAM_UNAVAILABLE', 'Two-factor setup or management is unavailable. Please contact the site administrator.');
+- tilføjet define('_US_2FAM_STARTAGAIN', 'Setup expired or the account changed. Enter your password to start setup again.');
+- tilføjet define('_US_2FAM_BADPASSWORD', 'Your current password was not accepted.');
+- tilføjet define('_US_2FAM_RESET', 'Reset this user’s two-factor authentication');
+- tilføjet define('_US_2FAM_STATUS_NONE', 'Not enrolled');
+- tilføjet define('_US_2FAM_STATUS_TOTP', 'Authenticator app enrolled');
+- tilføjet define('_US_2FAM_STATUS_EMAIL', 'E-mail codes enrolled');
+- tilføjet define('_US_2FAM_STATUS_UNAVAILABLE', 'Status unavailable');
+- tilføjet define('_US_2FAM_RESET_HELP', 'This disables the user’s second factor, whichever method they enrolled, and revokes their recovery codes and remember-me cookies. Existing signed-in sessions remain active. Enter your own administrator password to confirm.');
+- tilføjet define('_US_2FAM_RESET_DONE', 'The user’s two-factor authentication was reset.');
+- tilføjet define('_US_2FAM_BACK', 'Back to account');
+- tilføjet define('_US_2FAM_DONE', 'Two-factor authentication is enabled.');
+- tilføjet define('_US_2FAM_REPLACED', 'Previous recovery codes have been revoked.');
+- tilføjet define('_US_2FAM_NOTICE_SUBJECT', '%s: two-factor authentication changed');
+- tilføjet define('_US_2FAM_NOTICE_BODY', 'Two-factor authentication or recovery codes were changed for your account at %s from %s. If this was not you, contact the site administrator.');
+- tilføjet define('_US_2FAM_RESET_SUBJECT', '%s: an administrator reset your two-factor authentication');
+- tilføjet define('_US_2FAM_RESET_BODY', 'An administrator disabled your second factor and revoked its recovery codes at %s from %s. Existing signed-in sessions remain active. Sign in and set up two-factor authentication again. Contact the site administrator if this was unexpected.');
+
+/upgrade/language/english/twofactor.php (ny fil)
+- tilføjet define('_XOOPS_UPGRADE_TWOFACTOR_SODIUM_OK', 'Sodium is available for two-factor authentication.');
+- tilføjet define('_XOOPS_UPGRADE_TWOFACTOR_SODIUM_MISSING', 'Two-factor authentication requires the PHP sodium extension. Enable it for the web server and reload this page. Without it, setup and authenticator-code verification are unavailable; enrolled users need a recovery code or an administrator reset. Upgrading can continue with two-factor authentication off.');
+
+/htdocs/install/language/english/twofactor.php
+- tilføjet define('TWOFACTOR_SODIUM', 'Sodium extension: required for two-factor authentication');
+- tilføjet define('TWOFACTOR_SODIUM_MSG', 'Enable the PHP sodium extension for the web server and reload this page before enabling two-factor authentication. Without it, setup and authenticator-code verification are unavailable. Installation can continue with two-factor authentication off.');
+
+================================
+2026/09: Version 2.7.4-Beta1
+================================
+/htdocs/modules/system/language/english/menus/menus.php (ny fil — frontend-etiketter for standardsystemmenuen)
+- flyttet fra /htdocs/modules/system/language/english/admin/menus.php, værdier uændrede:
+  define('MENUS_HOME', 'Home');
+  define('MENUS_ADMIN', 'Administration');
+  define('MENUS_ACCOUNT', 'Account');
+  define('MENUS_ACCOUNT_EDIT', 'Edit Account');
+  define('MENUS_ACCOUNT_LOGIN', 'Login');
+  define('MENUS_ACCOUNT_LOGOUT', 'Logout');
+  define('MENUS_ACCOUNT_REGISTER', 'Sign Up');
+  define('MENUS_ACCOUNT_MESSAGES', 'Messages');
+  define('MENUS_ACCOUNT_NOTIFICATIONS', 'Notifications');
+  define('MENUS_ACCOUNT_TOOLBAR', 'Toolbar');
+  (løses ved rendering ud fra titler angivet af include/menu_seed.php; oversættelser
+  placeres i language/<lang>/menus/menus.php, se menus.dist.php)
+
+/htdocs/modules/system/language/english/admin/users.php
+- tilføjet define('_AM_SYSTEM_USERS_NO_SUCH_USER', 'No such user');
+  (brugt af admin/users/main.php siden 2.5, men aldrig defineret; PHP 8 gav en
+  undefined-constant-fejl i stedet for en omdirigering)
+
+================================
+2026/08: Version 2.7.3-Final
+================================
+/htdocs/language/english/user.php
+- tilføjet define('_US_SURETOLOGOUT', 'Are you sure you want to log out?');
+  (log ud beder nu om bekræftelse, når anmodningen ikke indeholder et sessionstoken)
+
+================================
+2026/08: Version 2.7.3-RC1
+================================
+/htdocs/class/xoopseditor/sceditor/language/english.php (ny fil — SCEditor-editor)
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR', 'SCEditor (BBCode)');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_STRIKE', 'Strikethrough');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_LEFT', 'Align left');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_CENTER', 'Align center');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_RIGHT', 'Align right');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_SIZE', 'Font Size');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_SIZE_PROMPT', 'Size (%s):');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_EMAIL', 'Email');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_EMAIL_PROMPT', 'Email address:');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_SITEURL', 'Site URL');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_SITEURL_PROMPT', 'Site-relative path:');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_QUOTE', 'Quote');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_CODE', 'Code');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_LIST', 'Bulleted list');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_IMAGE', 'Image');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_IMAGE_PROMPT', 'Image URL:');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_YOUTUBE', 'YouTube');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_YOUTUBE_PROMPT', 'YouTube URL or video ID:');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_WIDTH_PROMPT', 'Width:');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_HEIGHT_PROMPT', 'Height:');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_WIKI', 'Wiki link');
+- tilføjet define('_XOOPS_EDITOR_SCEDITOR_WIKI_PROMPT', 'Wiki page:');
+
+================================
+2026/07: Version 2.7.1-Final
+================================
+/htdocs/themes/xbootstrap5/language/english/main.php
+- tilføjet define('THEME_COMMENT_OPTIONS', 'Comment View Options');
+  (findes allerede i themes/xswatch5; tilføjet her for konsistens)
+
+Konstanterne for private beskeder er blevet omdøbt til de standardiserede præfikser
+_MD_ / _AM_ / _MI_. De engelske værdier er uændrede, så oversættere skal blot omdøbe
+konstanterne i deres egne filer - genoversættelse er ikke nødvendig.
+
+/htdocs/language/english/pmsg.php
+- omdøbt _PM_* -> _MD_PM_* (35 konstanter, f.eks. _PM_DELETED -> _MD_PM_DELETED)
+
+/htdocs/modules/pm/language/english/main.php
+- omdøbt _PM_* -> _MD_PM_* (69 konstanter, f.eks. _PM_DELETED -> _MD_PM_DELETED)
+
+/htdocs/modules/pm/language/english/admin.php
+- omdøbt _PM_AM_* -> _AM_PM_* (8 konstanter, f.eks. _PM_AM_PRUNE -> _AM_PM_PRUNE)
+
+/htdocs/modules/pm/language/english/modinfo.php
+- omdøbt _PM_MI_* -> _MI_PM_* (18 konstanter, f.eks. _PM_MI_NAME -> _MI_PM_NAME)
+
+================================
+2026/05/17: Version 2.7.1-Betas/RC1
+================================
+/htdocs/modules/system/language/english/admin/blocksadmin.php
+- tilføjet define('_AM_SYSTEM_BLOCKS_INVALID_CLONE', 'Invalid block parameters.');
+
+================================
+2025/03/30: Version 2.7.0-Betas (tidligere udgivet som 2.5.12-Betas)
+================================
+/htdocs/install/language/english/install.php
+- tilføjet define('MISSING_REQUIRED_EXTENSIONS', 'Required PHP extensions are missing');
+- tilføjet define('MISSING_REQUIRED_EXTENSIONS_MSG', 'XOOPS cannot be installed because the following mandatory PHP extension(s) are not available: %s. Enable them in your PHP configuration (php.ini) and restart your web server, then reload this page.');
+
+/htdocs/modules/system/language/english/admin/modulesadmin.php
+- tilføjet define('_AM_SYSTEM_MODULES_CONFIG_DATA_INVALID', ' ERROR: Skipped malformed config entry %s. ');
+
+/htdocs/modules/system/language/english/admin.php
+- tilføjet define('_AM_SYSTEM_MENUS', 'Menuer');
+- added define('_AM_SYSTEM_MENUS_DESC', 'Administrer webstedsnavigationsmenuer');
+
+/htdocs/modules/system/language/english/modinfo.php
+- tilføjet define('_MI_SYSTEM_MENUS_ACTIVE', 'Aktiver menusystem');
+- added define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Aktiver det indbyggede menustyringssystem til webstedsnavigation');
+
+/htdocs/modules/system/language/english/admin/menus.php (NY FIL)
+- tilføjet define('_AM_SYSTEM_MENUS_NAV_MAIN', 'Menu Manager');
+- tilføjet define('_AM_SYSTEM_MENUS_NAV_BACK', 'Tilbage til menulisten');
+- ​​tilføjet define('_AM_SYSTEM_MENUS_NAV_CATEGORY', 'Kategorivisning');
+- tilføjet define('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>Tips:</strong><ul>...');
+- tilføjet define('_AM_SYSTEM_MENUS_ACTIVE', 'Active');
+- tilføjet define('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Enabled');
+- tilføjet define('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Deaktiveret');
+- added define('_AM_SYSTEM_MENUS_SAVED', 'Gem succesfuldt');
+- tilføjet define('_AM_SYSTEM_MENUS_DELETED', 'Slettet med succes');
+- tilføjet define('_AM_SYSTEM_MENUS_ORDER_SAVED', 'Ordre gemt');
+- tilføjet define('_AM_SYSTEM_MENUS_LISTCAT', 'Listekategorier');
+- tilføjet define('_AM_SYSTEM_MENUS_LISTITEM', 'List Items');
+- ​​tilføjet define('_AM_SYSTEM_MENUS_ADDCAT', 'Tilføj kategori');
+- tilføjet define('_AM_SYSTEM_MENUS_EDITCAT', 'Rediger kategori');
+- tilføjet define('_AM_SYSTEM_MENUS_DELCAT', 'Slet kategori');
+- tilføjet define('_AM_SYSTEM_MENUS_CATTITLE', 'Kategorititel');
+- tilføjet define('_AM_SYSTEM_MENUS_CATTITLE_DESC', 'Et sprogkonstantnavn (f.eks. MENUS_HOME) kan bruges her, så etiketten kan oversættes.');
+- tilføjet define('_AM_SYSTEM_MENUS_CATPREFIX', 'Præfiks (HTML)');
+- added define('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Valgfri markering vist før kategorititlen, såsom et Font Awesome-ikon.');
+- tilføjet define('_AM_SYSTEM_MENUS_CATSUFFIX', 'Suffiks (HTML)');
+- added define('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', 'Valgfri markering vist efter kategorititlen.');
+- tilføjet define('_AM_SYSTEM_MENUS_CATURL', 'URL');
+- tilføjet define('_AM_SYSTEM_MENUS_CATURL_DESC', 'Link til selve kategorien, såsom "index.php" eller en absolut URL.');
+- ​​tilføjet define('_AM_SYSTEM_MENUS_CATTARGET', 'Linkmål');
+- tilføjet define('_AM_SYSTEM_MENUS_CATPOSITION', 'Position');
+- added define('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', 'Er du sikker på, at du vil slette kategorien "%s" og alle dens elementer?');
+- tilføjet define('_AM_SYSTEM_MENUS_ADDITEM', 'Add Item');
+- tilføjet define('_AM_SYSTEM_MENUS_EDITITEM', 'Rediger element');
+- tilføjet define('_AM_SYSTEM_MENUS_DELITEM', 'Slet element');
+- ​​tilføjet define('_AM_SYSTEM_MENUS_ITEMTITLE', 'Item Title');
+- added define('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', 'Et sprogkonstantnavn kan bruges her, så etiketten kan oversættes.');
+- tilføjet define('_AM_SYSTEM_MENUS_ITEMPREFIX', 'Præfiks (HTML)');
+- ​​added define('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Valgfri markering vist før elementets titel, såsom et Font Awesome-ikon.');
+- tilføjet define('_AM_SYSTEM_MENUS_ITEMSUFFIX', 'Suffiks (HTML)');
+- added define('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', 'Valgfri markering vist efter elementets titel. Understøtter <{xoInboxCount}> pladsholderen.');
+- tilføjet define('_AM_SYSTEM_MENUS_ITEMURL', 'URL');
+- tilføjet define('_AM_SYSTEM_MENUS_ITEMTARGET', 'Linkmål');
+- tilføjet define('_AM_SYSTEM_MENUS_ITEMPOSITION', 'Position');
+- tilføjet define('_AM_SYSTEM_MENUS_ITEMPARENT', 'Overordnet element');
+- tilføjet define('_AM_SYSTEM_MENUS_ITEMCATEGORY', 'Category');
+- ​​added define('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', 'Er du sikker på, at du vil slette elementet "%s" og dets underpunkter?');
+- tilføjet define('_AM_SYSTEM_MENUS_TARGET_SELF', 'Samme vindue');
+- tilføjet define('_AM_SYSTEM_MENUS_TARGET_BLANK', 'Nyt vindue');
+- tilføjet define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', 'Grupper der kan se denne kategori');
+- added define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', 'Brugere skal have kategoriadgang, før nogen af dens elementer bliver synlige.');
+- tilføjet define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', 'Grupper, der kan se dette element');
+- added define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', 'Varetilladelser kontrolleres efter tilladelsen til den overordnede kategori.');
+- tilføjet define('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', 'Kategori ikke fundet');
+- added define('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', 'Kan ikke slette en beskyttet kategori');
+- tilføjet define('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', 'Kan ikke aktiveres: kategorien er inaktiv');
+- tilføjet define('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', 'Element ikke fundet');
+- tilføjet define('_AM_SYSTEM_MENUS_ERROR_ITEMPROTECTED', 'Kan ikke slette et beskyttet element');
+- tilføjet define('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', 'Ugyldigt overordnet element valgt');
+- tilføjet define('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', 'Kan ikke indstille overordnet: det ville skabe en cirkulær reference');
+- tilføjet define('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', 'Maksimal rededybde (3 niveauer) overskredet');
+- tilføjet define('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', 'Kan ikke aktiveres: det overordnede element er inaktivt');
+- added define('_AM_SYSTEM_MENUS_ERROR_NOITEMS', 'Der er ingen undermenupunkter i denne kategori.');
+- added define('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', 'Aktiver dette element før du redigerer det');
+- added define('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', 'Aktiver dette element før du sletter det');
+- tilføjet define('MENUS_HOME', 'Hjem');
+- tilføjet define('MENUS_ADMIN', 'Administration');
+- tilføjet define('MENUS_ACCOUNT', 'Account');
+- tilføjet define('MENUS_ACCOUNT_EDIT', 'Rediger konto');
+- tilføjet define('MENUS_ACCOUNT_LOGIN', 'Login');
+- ​​tilføjet define('MENUS_ACCOUNT_LOGOUT', 'Logout');
+- tilføjet define('MENUS_ACCOUNT_REGISTER', 'Tilmeld');
+- tilføjet define('MENUS_ACCOUNT_MESSAGES', 'Beskeder');
+- tilføjet define('MENUS_ACCOUNT_NOTIFICATIONS', 'Meddelelser');
+- tilføjet define('MENUS_ACCOUNT_TOOLBAR', 'Værktøjslinje');
+
+/htdocs/modules/system/constants.php
+- tilføjet define('XOOPS_SYSTEM_MENUS', 19);
+
+/htdocs/modules/system/language/english/blocks.php
+-added define('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', "Blok 'Waiting Contents' er forældet siden XOOPS 2.5.11, brug venligst ventemodul");
+
+/htdocs/install/language/english/welcome.php
+- opdaterede PHP- og MySQL-versioner
+
+/htdocs/modules/pm/language/english/main.php
+- updated define('_MD_PM_EMAIL_DESC', 'Kære %s, dette er en meddelelse overført fra din konto på ' . $GLOBALS['xoopsConfig']['sitename']);
+- updated define('_MD_PM_EMAIL_DESC', 'Kære %s, dette er en meddelelse overført fra din konto på ' . $GLOBALS['xoopsConfig']['sitename']);
+
+/htdocs/language/english/user.php
+- updated define('_US_SORRYNOTFOUND', 'Beklager, ingen tilsvarende brugeroplysninger blev fundet.');
+- updated define('_US_SORRYNOTFOUND', 'Hvis en konto matcher de angivne oplysninger, behandler vi din anmodning. Hvis du ikke modtager en e-mail inden længe, ​​bedes du tjekke din spam-mappe eller kontakte webstedets administrator.');
+
+- opdateret define('_US_PWDMAILED', 'Adgangskode til %s sendt.');
+- updated define('_US_PWDMAILED', 'Hvis der findes en konto til denne e-mail, vil du modtage instruktioner til nulstilling af adgangskode. Tjek om nødvendigt din spam-mappe, eller kontakt webstedsadministratoren.');
+
+- opdateret define('_US_CONFMAIL', 'Bekræftelses-e-mail for %s sendt.');
+- updated define('_US_CONFMAIL', 'Hvis der findes en konto til denne e-mail, vil du modtage instruktioner til nulstilling af adgangskode. Tjek om nødvendigt din spam-mappe, eller kontakt webstedsadministratoren.');
+
+/htdocs/class/xoopseditor/tinymce5/language/english.php
+- omdøbt _XOOPS_EDITOR_TINYMCE_LANGUAGE5 til _XOOPS_EDITOR_TINYMCE5_LANGUAGE
+
+/htdocs/modules/system/themes/transition/language/english/admin.php
+- omdøbt _OXYGEN_Server_API til _OXYGEN_SERVER_API
+
+/htdocs/modules/system/language/english/admin/preferences.php.
+- added define('_MD_AM_SENDMAIL_NOT_FOUND', 'Sendmail binær ikke fundet. Tjek venligst din serverkonfiguration.');
+- added define('_MD_AM_SENDMAIL_HELP_MISSING_BIN', 'Ingen gyldig sendmail-kompatibel binær blev fundet. Installer en MTA (f.eks. Postfix, msmtp) eller skift til SMTP i Præferencer.');
+
+/htdocs/modules/system/language/english/admin/users.php
+- tilføjet define('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Ukendt gruppe');
+
+/htdocs/modules/system/language/english/comment.php
+- tilføjet define('_CM_ADDCOMMENT', 'Tilføj kommentar');
+
+
+/htdocs/install/language/english/install.php
+- tilføjet define('_WEBSITE_NAME', 'XOOPS Site');
+- tilføjet define('_WEBSITE_SLOGAN', 'Bare brug det!');
+- tilføjet define('_WEBSITE_META_KEYWORDS', 'xoops, webapplikationsramme, cms, indholdsstyringssystem');
+- tilføjet define('_WEBSITE_FOOTER', "Drevet af XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='XOOPS-projektet'>XOOPS-projektet</a>");
+- tilføjet define('_WEBSITE_COPYRIGHT', 'Copyright © 2001-{X_YEAR}');
+- added define('_WEBSITE_DESCRIPTION', 'XOOPS er et dynamisk objektorienteret baseret open source-portalscript skrevet i PHP.');
+- tilføjet define('_WEBSITE_CENSOR_REPLACE', 'OOPS');
+
+
+================================
+2023/10/01: Version 2.5.11-Final
+================================
+/language/english/uploader.php
+-added define('_ER_UP_MODE_NOT_CHANGED', 'Filen blev uploadet, men kunne ikke ændre tilstanden');
+
+================================
+2023/10/01: Version 2.5.11-RC3
+================================
+
+ÆNDREDE FILER:
+upgrade/language/english/upgrade.php
+upgrade/language/english/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/language/english.php
+- tilføjet define('_FAILGETIMG', 'Kunne ikke hente billede %s');
+
+/htdocs/modules/system/language/english/modinfo.php
+- tilføjet define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Deaktiver midlertidigt');
+- tilføjet define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'E-mail');
+- ​​tilføjet define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Privat besked');
+
+/htdocs/modules/system/language/english/admin/preferences.php
+- tilføjet define('_MD_AM_DEFAULT_NOTIFICATION_METHOD', 'Standard meddelelsesmetode');
+- added define('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', 'For nye brugere, når de abonnerer på meddelelser fra f.eks. et forum.');
+- tilføjet define('_MD_AM_MODULEPREF',
+
+
+================================
+2023/03/19: Version 2.5.11-RC1
+================================
+
+ÆNDREDE FILER:
+htdocs/language/english/global.php
+- tilføjet define('_DB_QUERY_ERROR', 'Forespørgsel mislykkedes! SQL: %s - Fejl: ');
+- tilføjet define('_PRINT', 'Print');
+- tilføjet define('_PDF', 'PDF');
+- ​​tilføjet define('_OFF', 'Off');
+
+================================
+2021/09/02: Version 2.5.11-Betas
+================================
+
+ÆNDREDE FILER:
+htdocs/language/english/admin.php
+- added define('_AD_WARNING_NO_XML', 'PHP XML-udvidelsen er påkrævet for denne funktion.');
+
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- tilføjet define('_AM_ADMINSTATS_LAST_MONTH', 'Sidste måned');
+- tilføjet define('_AM_ADMINSTATS_LAST_WEEK', 'Sidste uge');
+- tilføjet define('_AM_ADMINSTATS_LAST_DAY', 'Sidste dag');
+- ​​tilføjet define('_AM_ADMINSTATS_LAST_HOUR', 'Sidste time');
+
+htdocs/language/english/global.php
+- tilføjet define('_PRINT', 'Print');
+- tilføjet define('_PDF', 'PDF');
+- ​​tilføjet define('_OFF', 'Off');
+- ændret define('_ON', 'On'); //fra 'på'
+
+htdocs/language/english/global.php
+- ​​ændret define('_SIZE', 'Størrelse'); // skriftstørrelse
+- ændret define('_FONT', 'Font'); // skrifttypefamilie
+- ændret define('_COLOR', 'Color'); // skrifttypefarve
+
+htdocs/install/language/english/install.php
+- added define('ERR_COPY_CONFIG_FILE', 'Kunne ikke kopiere konfigurationsfilen %s');
+
+htdocs/install/language/english/welcome.php
+- ændret anbefalede PHP- og MySQL-versioner, links ændret til "https:"
+
+htdocs/modules/system/language/english/admin/preferences.php
+- changeret define('_MD_AM_SMTPHOSTDESC', 'Enten et enkelt værtsnavn eller flere semikolon-separerede værtsnavne.<br>Du kan også angive en anden port for hver vært ved at bruge dette format: [værtsnavn:port] (f.eks. "smtp1.eksempel.com:25;smtp.com:25;smtp.com") også typekryptere,<br>enkrypt.com2. eksempel: (f.eks. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").<br>Værter vil blive prøvet i rækkefølge.');
+
+htdocs/modules/system/language/english/help/blocksadmin.html
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- ændret define('_AM_SYSTEM_MODULES_ADMIN', 'XOOPS Modul Administration');
+
+NYE FILER:
+htdocs/themes/xswatch4/language/english/main.php
+Startede som kopi af xswatch/language/english/main.php derefter:
+- tilføjet define('THEME_TOOLBAR_DEBUGMODE', 'Debug Mode');
+- tilføjet define('THEME_TOOLBAR_THIS_MODULE', 'This Module');
+- tilføjet define('THEME_PERMISSIONS_LEGEND', 'Permissions &amp; Legend');
+- tilføjet define('THEME_INBOX_ALERT', 'PM Alert');
+- added define('THEME_INBOX_LINK', 'Klik her for at se din indbakke!');
+- tilføjet define('THEME_EVENT_DOWNLOADS', 'Begivenhedsdownloads');
+- ​​tilføjet define('THEME_FILE_NAME', 'File');
+- tilføjet define('THEME_FILE_SIZE', 'Størrelse');
+- tilføjet define('THEME_CONTROL_NEXT', 'Next');
+- tilføjet define('THEME_CONTROL_PREVIOUS', 'Forrige');
+
+htdocs/language/english/user.php
+- tilføjet define('_US_DESCRIPTIONMIN', 'Minimum påkrævet længde: %s');
+- tilføjet define('_US_DESCRIPTIONMAX', 'Maksimal længde: %s');
+
+htdocs/modules/system/language/english/admin/mailusers.php
+- tilføjet define('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME} vil udskrive navn eller unname hvis tom');
+
+htdocs/modules/system/language/english/admin/images.php
+- added define("_AM_SYSTEM_IMAGES_SCATDELNG","Kan ikke slette denne kategori");
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- ​​tilføjet define('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'This Module Admin');
+
+SLETTEDE FILER:
+htdocs/modules/system/language/english/admin/users.php
+- slettet define('_AM_SYSTEM_USERS_MODIFYUSER', 'Rediger bruger');
+- slettet define('_AM_SYSTEM_USERS_DELUSER', 'Slet bruger');
+- slettet define('_AM_SYSTEM_USERS_GO', 'Go!');
+
+================================
+2019/04/29: Version 2.5.10 endelig
+================================
+TILFØJET/SLETTEDE DEFINERER:
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- added define('_AM_LABEL_BAN_BY_IP', 'Forbyd IP'erne på kontrollerede poster:');
+- tilføjet define('_AM_BUTTON_BAN_BY_IP', 'IP Ban!');
+- tilføjet define('_AM_JS_BANCONFIRM', 'IP-forbud OK?');
+- tilføjet define('_AM_MSG_BANNEDIP', 'IP'er er forbudt');
+- tilføjet define('_AM_ADMINSTATS_TITLE', 'Protector Log Summary');
+
+htdocs/xoops_lib/modules/protector/language/english/modinfo.php
+- added define($constpref . '_ADMINSTATS', 'Oversigt');
+- ​​added define($constpref . '_BANIP_TIME0DSC', 'Suspensionstid i sekunder for automatiske IP-forbud');
+
+htdocs/language/english/uploader.php
+- added define('_ER_UP_INDEXNOTSET', 'Forsøg på at hente flere filer, indeks skal indstilles.');
+
+htdocs/language/english/admin.php
+- added define('_AD_WARNING_OLD_PHP', 'ADVARSEL: Overvej at opgradere til en nyere version af PHP. Version %s eller nyere anbefales og vil være påkrævet i fremtidige XOOPS-versioner.');
+
+ÆNDREDE DEFINER
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_TXT_HOWTOCHANGEDB',"Hvis du vil ændre præfiks,<br> rediger %s/data/secure.php manuelt.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- ændret anbefalet PHP-version, tilføjet afsnit med særlige bemærkninger til SELinux
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- i definitionen af '_AM_MODULEADMIN_ADMIN_FOOTER', ændrede XOOPS-links til 'https://xoops.org'
+
+NYE FILER:
+n/a
+
+===============================
+2017/08/01: Version 2.5.9 Final
+===============================
+TILFØJET/SLETTEDE DEFINER
+
+htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- tilføjet define('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Amount');
+- added define('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Indtast venligst USD-beløb f.eks. $25.00');
+- tilføjet define('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'USD');
+- tilføjet define('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00');
+- tilføjet define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$');
+- added define('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'Donerer med PayPal eller et større kreditkort online!');
+
+htdocs/install/language/english/install.php
+*BEMÆRK* Installationsprogrammet blev væsentligt ændret, så denne fil bør gennemgås nøje
+- tilføjet define("CURL_HTTP", "Client URL Library (cURL)");
+- tilføjet define('XOOPS_COOKIE_DOMAIN_LABEL', 'Cookie-domæne til webstedet');
+- added define('XOOPS_COOKIE_DOMAIN_HELP', 'Domæne til at sætte cookies. Kan være tomt, hele værten fra URL'en (www.example.com) eller det registrerede domæne uden underdomæner (example.com) til deling på tværs af underdomæner (www.example.com og blog.example.com.)');
+- tilføjet define('INTL_SUPPORT', 'Internationaliseringsfunktioner');
+- tilføjet define('XOOPS_SOURCE_CODE', "XOOPS på GitHub");
+- tilføjet define('XOOPS_INSTALLING', 'Installerer');
+- tilføjet define('XOOPS_ERROR_ENCOUNTERED', 'Fejl');
+- added define('XOOPS_ERROR_SEE_BELOW', 'Se nedenfor for beskeder.');
+- ​​added define('MODULES_AVAILABLE', 'Tilgængelige moduler');
+- tilføjet define('INSTALL_THIS_MODULE', 'Add %s');
+
+htdocs/install/language/english/finish.php
+- skift for at henvise nye brugere til xoops.org for information om moduler og temaer
+
+htdocs/language/english/global.php
+- tilføjet define('_UPLOAD', 'Upload');
+- tilføjet define('_SELECTFILES', 'Vælg filer');
+- tilføjet define('_DROPFILESHERE', 'Slip filer her');
+- tilføjet define('_RETRY', 'Retry');
+- tilføjet define('_OK', 'Ok');
+- tilføjet define('_FORMATPROGRESS', '{percent}% af {total_size}');
+- ​​tilføjet define('_FAILUPLOAD', 'Upload mislykkedes!');
+- tilføjet define('_WAITINGFORRESPONSE', 'Behandler...');
+- tilføjet define('_PAUSED', 'Pause');
+- added define('_PROCESSINGDROPPEDFILES', 'Behandler slettede filer...');
+- added define('_TYPEERROR', '{file} har en ugyldig udvidelse. Gyldige udvidelser: {extensions}!');
+- added define('_SIZEERROR', '{fil} er for stor, maksimal filstørrelse er {sizeLimit}!');
+- added define('_MINSIZEERROR', '{fil} er for lille, mindste filstørrelse er {minSizeLimit}!');
+- added define('_EMPTYERROR', '{fil} er tom, vælg venligst filer igen uden!');
+- ​​tilføjet define('_NOFILESERROR', 'Ingen filer at uploade!');
+- added define('_TOOMANYITEMSERROR', 'For mange elementer ({netItems}) ville blive uploadet. Varegrænsen er {itemLimit}!');
+- tilføjet define('_MAXHEIGHTIMAGEERROR', 'Billedet er for højt!');
+- tilføjet define('_MAXWIDTHIMAGEERROR', 'Billedet er for bredt!');
+- tilføjet define('_MINHEIGHTIMAGEERROR', 'Billedet er ikke højt nok!');
+- tilføjet define('_MINWIDTHIMAGEERROR', 'Billedet er ikke bredt nok!');
+- added define('_RETRYFAILTOOMANYITEMS', 'Forsøg mislykkedes igen - du har nået din filgrænse!');
+- ​​added define('_ONLEAVE', 'Filerne bliver uploadet, hvis du forlader nu vil uploaden blive annulleret!');
+- added define('_UNSUPPORTEDBROWSERIOS8SAFARI', 'Uoprettelig fejl - denne browser tillader ikke filupload af nogen art på grund af alvorlige fejl i iOS8 Safari. Brug venligst iOS8 Chrome indtil Apple løser disse problemer!');
+
+htdocs/language/english/uploader.php
+- added define('_ER_UP_INISIZE', 'Den uploadede fil overstiger upload_max_filesize-direktivet i php.ini');
+- added define('_ER_UP_FORMSIZE', 'Den uploadede fil overskrider MAX_FILE_SIZE-direktivet, der blev specificeret i HTML-formularen');
+- added define('_ER_UP_PARTIAL', 'Den uploadede fil blev kun delvist uploadet');
+- tilføjet define('_ER_UP_NOFILE', 'Ingen fil blev uploadet');
+- added define('_ER_UP_NOTMPDIR', 'Mangler en midlertidig mappe');
+- tilføjet define('_ER_UP_CANTWRITE', 'Kunne ikke skrive fil til disk');
+- added define('_ER_UP_EXTENSION', 'Filupload stoppet med forlængelse. Se phpinfo()');
+- tilføjet define('_ER_UP_UNKNOWN', 'Ukendt uploadfejl');
+
+htdocs/language/english/user.php
+- ​​slettet define('_US_USECOOKIE', 'Gem mit brugernavn i en cookie i 1 år');
+
+htdocs/modules/profile/language/english/admin.php
+- added define('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', 'Du kan ikke deaktivere Webmaster-konto');
+
+htdocs/modules/system/language/english/admin/comments.php
+- added define('_MP_DELETECOUNT', 'Antallet af medlemmer i gruppen er for stort ( > 4.000) ');
+
+htdocs/modules/system/language/english/admin/userrank.php
+- tilføjet define('_AM_SYSTEM_USERRANK_ERROR', 'Fejl');
+
+upgrade/language/english/upgrade.php
+- tilføjet define('_LANGUAGE', 'Language');
+- tilføjet define('_SUPPORT', 'Support');
+- tilføjet define('_XOOPS_SOURCE_CODE', 'XOOPS på GitHub');
+- tilføjet define('_PATCH_COUNT', 'Patches sæt');
+- tilføjet define('_USERNAME_PLACEHOLDER', 'Dit brugernavn');
+- tilføjet define('_PASSWORD_PLACEHOLDER', 'Dit kodeord');
+- tilføjet define('_CONTINUE', 'Fortsæt');
+- tilføjet define('XOOPS_ERROR_ENCOUNTERED', 'Fejl');
+- added define('XOOPS_ERROR_SEE_BELOW', 'Se nedenfor for beskeder.');
+
+htdocs/themes/xbootstrap/language/english/main.php
+- tilføjet define("THEME_USER_WELCOME", "Velkommen");
+
+NYE FILER:
+- htdocs/modules/system/themes/transition/language/english/admin.php
+- htdocs/modules/system/themes/transition/language/english/localsupport.php
+
+- opgradering/sprog/engelsk/
+*BEMÆRK* Opgraderingskoden blev væsentligt ændret, så disse filer bør gennemgås nøje
+- flyttede alle pr. patch-sprogfiler fra patch-mapper til upgrade/language/*
+  dvs. upgrade/upd-2.0.18-to-2.3.0/language/english.php blev
+  upgrade/language/english/upd-2.0.18-to-2.3.0.php
+
+- upgrade/language/english/support.php (samme som htdocs/install/language/english/support.php)
+- upgrade/language/english/welcome.php
+
+===============================
+2016/05/27: Version 2.5.8
+===============================
+TILFØJET/SLETTEDE DEFINER
+
+/install/language/english/install.php
+/modules/system/language/english/admin/modulesadmin.php
+- tilføjet define('_AM_SYSTEM_MODULES_INSTALL_MORE',"Installer flere moduler");
+
+/modules/system/language/english/admin/users.php
+define('_AM_SYSTEM_USERS_ACTIVATE', 'Aktiver bruger');
+
+/modules/system/language/english/blocks.php
+define('_MB_SYSTEM_BLOCK_HEIGHT',"Blokhøjde (linjer)");
+
+install/language/english/install.php
+define('CHMOD_CHGRP_REPEAT', 'Prøv igen');
+define('CHMOD_CHGRP_IGNORE', 'Brug alligevel');
+define('CHMOD_CHGRP_ERROR', 'Installationsprogrammet er muligvis ikke i stand til at skrive konfigurationsfilen %1$s.<p>PHP skriver filer under bruger %2$s og gruppe %3$s.<p>Den dire
+
+ÆNDREDE DEFINER
+xoops_lib/modules/protector/language/english/modinfo.php
+define($constpref . '_HIJACK_TOPBITDSC', ...
+
+/modules/system/themes/default/language/english/admin.php
+define('_OXYGEN_CODESVN', 'Kodelager');
+
+install/language/english/install.php
+define('SAVED_MAINFILE', 'Indstillinger gemt');
+define('ERR_NEED_WRITE_ACCESS', 'Serveren skal have skriveadgang til følgende filer og mapper<br />(dvs. <em>chmod 775 directory_name</em> på en UNIX/LINUX-server)<br />Hvis de ikke er tilgængelige eller ikke oprettet korrekt, bedes du oprette manuelt tilladelser.');
+define('ERR_COPY_MAINFILE', 'Kunne ikke kopiere distributionsfilen til %s');
+define('ERR_WRITE_MAINFILE', 'Kunne ikke skrive ind i %s. Tjek venligst filtilladelsen og prøv igen.');
+define('ERR_READ_MAINFILE', 'Kunne ikke åbne %s til læsning');
+
+/modules/system/themes/zetadigme/language/english/admin.php
+define('_MD_CODESVN', 'Code Repository');
+
+NYE FILER:
+/language/english/stopwords.php
+/language/english/xmf.php
+
+OPDATERET XoopsMailerLocal klasseeksempel:
+htdocs/language/english/xoopsmailerlocal.php
+
+===============================
+2014/06/14: Version 2.5.7 Final
+===============================
+TILFØJET/SLETTEDE DEFINER
+
+/install/language/english/install.php
+- tilføjet define('WRITTEN_LICENSE',"Written XOOPS %s Licensnøgle: <strong>%s</strong>");
+
+===============================
+2014/03/18: Version 2.5.7 RC1
+===============================
+TILFØJET/SLETTEDE DEFINER
+
+/modules/system/language/english/admin.php
+- tilføjet define('_AM_SYSTEM_USAGE',"Usage");
+- tilføjet define('_AM_SYSTEM_ACTIVE',"Active");
+
+
+===============================
+2012/04/15: Version 2.5.5
+===============================
+TILFØJET/SLETTEDE DEFINER
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- tilføjet define("_AM_MODULEADMIN_HOME", "Hjem");
+- tilføjet define("_AM_MODULEADMIN_DASHBOARD", "Dashboard");
+- tilføjet define("_AM_MODULEADMIN_ABOUT", "Om");
+- tilføjet define("_AM_MODULEADMIN_PERMISSIONS", "Tilladelser");
+- tilføjet define("_AM_MODULEADMIN_ABOUT_RELEASEDATE","Udgivet: ");
+- tilføjet define("_AM_MODULEADMIN_ABOUT_AUTHOR","Forfatter: ");
+- tilføjet define("_AM_MODULEADMIN_ABOUT_CREDITS","Credits: ");
+- tilføjet define("_AM_MODULEADMIN_ABOUT_LICENSE","Licens: ");
+- tilføjet define("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","Forfatternavn: ");
+- tilføjet define("_AM_MODULEADMIN_ABOUT_AUTHOR_INFO","Forfatteroplysninger");
+- added define("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>Dette modul vedligeholdes af <a class='tooltip' rel='external' href='http://xoops.org/' title='Besøg XOOPS Community'>XOOPS Community"</a></div>");
+
+/language/english/calendar.php
+- tilføjet define("_CAL_FORMAT","Y-m-d");
+
+/xoops_lib/modules/protector/language/english/modinfo.php
+
+- tilføjet define($constpref."_ADMINHOME","Hjem");
+- tilføjet define($constpref."_ADMINABOUT","Om");
+- tilføjet define($constpref.'_STOPFORUMSPAM_ACTION','Stop Forum Spam');
+- added define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Tjekker POST-data mod spammere registreret på www.stopforumspam.com database. Kræver php CURL lib.');
+
+
+/install/language/english/install.php
+- tilføjet define( "FILTER_FUNCTIONS", "Filterfunktioner");
+
+/language/english/global.php
+- tilføjet define('_DBDATESTRING', 'Å-m-d');
+- tilføjet define('_DBTIMESTRING', 'H:i:s');
+- tilføjet define('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s');
+
+/language/english/pmsg.php
+- tilføjet define('_MD_PM_READ', 'Allerede læst');
+
+/modules/system/language/english/admin.php
+- tilføjet define("_AM_SYSTEM_UNINSTALL","Afinstaller");
+
+SE OGSÅ:
+/modules/profile/docs/lang_diff.txt
+
+===============================
+2011/11/17: Version 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+2011/10/10: Version 2.5.4 RC
+===============================
+
+NYE FILER:
+modules/pm/language/english/help/help.html
+modules/profile/language/english/help/help.html
+modules/protector/language/english/help/help.html
+
+TILFØJET/SLETTEDE DEFINER
+
+/language/english/pmsg.php
+delete define('_MD_PM_READ', 'Allerede læst');
+
+/language/english/user.php
+- tilføjet define('_US_SKYPE', 'Skype');
+- tilføjet define('_US_FACEBOOK', 'Facebook');
+
+/modules/pm/language/english/main.php
+- slettet define("_MD_PM_RECEIVE","RECEIVE");
+- slettet define("_MD_PM_POST","POST");
+- slettet define("_MD_PM_READBOX","READBOX");
+- slettet define("_MD_PM_RSAVEBOX","Receive_SAVEBOX");
+- slettet define("_MD_PM_SENTBOX","SENTBOX");
+- slettet define("_MD_PM_PSAVEBOX","Post_SAVEBOX");
+- slettet define("_MD_PM_SAVED","Gem succesfuldt");
+- slettet define("_MD_PM_TOC","Fra: ");
+- slettet define("_MD_PM_UID","Afsenderens ID");
+
+/language/english/findusers.php
+- tilføjet define('_MA_USER_FACEBOOK', 'Facebook Link'); //AT GØRE
+- tilføjet define('_MA_USER_SKYPE', 'Skype Link');//TO DO
+
+/modules/pm/language/english/modinfo.php
+- tilføjet define("_MI_PM_ABOUT", "Om");
+
+/modules/profile/language/english/admin.php
+- tilføjet define('_PROFILE_AM_ACTION', 'Action');
+
+/modules/profile/language/english/modinfo.php
+- tilføjet define("_PROFILE_MI_ABOUT", "Om");
+- tilføjet define("_PROFILE_MI_HOME", "Hjem");
+
+
+/modules/system/language/english/admin/preferences.php
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","Generelle indstillinger");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","Brugerinformationsindstillinger");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","Metatags og sidefod");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","Word Censur Options");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","Søgemuligheder");
+- ​​slettet define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","E-mailopsætning");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","Authentication Options");*/
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL","En faire");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS","En faire");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","En faire");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","En faire");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","En faire");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","En faire");
+- slettet define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION","En faire");
+- slettet define("_MD_AM_LOADINGIMG", "Vis indlæser... billede?");
+- slettet define("_MD_AM_CHNGUTHEME", "Skift alle brugeres tema");
+
+/modules/system/language/english/admin/users.php
+- tilføjet define("_AM_SYSTEM_USERS_ACCEPT_EMAIL","Accepter e-mail fra Admin");
+
+- slettet define("_AM_SYSTEM_USERS_NAV_MANAGER","Brugeradministrator");
+- slettet define("_AM_SYSTEM_USERS_USERPOST","Brugerindlæg");
+- slettet define("_AM_SYSTEM_USERS_STORIES","Stories");
+- slettet define("_AM_SYSTEM_USERS_COMMENTS","Kommentarer");
+- slettet define("_AM_SYSTEM_USERS_PTBBTSDIYT","Tryk på knappen nedenfor for at synkronisere data, hvis du mener, at ovenstående brugerindlægsoplysninger ikke ser ud til at angive den faktiske status");
+- slettet define("_AM_SYSTEM_USERS_CNGTCOM","Kunne ikke få samlede kommentarer");
+- slettet define("_AM_SYSTEM_USERS_CNGTST","Kunne ikke få samlede historier");
+- slettet define("_AM_SYSTEM_USERS_LIST","List");
+- slettet define("_AM_SYSTEM_USERS_USERPOST","Brugerindlæg");
+- slettet define("_AM_SYSTEM_USERS_STORIES","Stories");
+- slettet define("_AM_SYSTEM_USERS_COMMENTS","Kommentarer");
+- slettet define("_AM_SYSTEM_USERS_PTBBTSDIYT","Tryk på knappen nedenfor for at synkronisere data, hvis du mener, at ovenstående brugerindlæg info ikke indikerer den faktiske status");
+- slettet define("_AM_SYSTEM_USERS_CNGTCOM","Kunne ikke hente alle kommentarer");
+- slettet define("_AM_SYSTEM_USERS_CNGTST","Kunne ikke hente alle historier");
+- slettet define("_AM_SYSTEM_USERS_LIST","List");
+
+xoops_lib/modules/protector/language/english/admin.php
+- tilføjet define("_AM_ADV_REGISTERGLOBALS2","og placer linjen nedenfor i den:");
+
+ÆNDREDE FILER:
+
+/modules/system/language/english/admin/users.php (Mamba)/
+/language/english/mail_template/activated.tpl
+/language/english/mail_template/adminactivate.tpl
+/language/english/mail_template/lostpass1.tpl
+/language/english/mail_template/lostpass2.tpl
+/language/english/mail_template/register.tpl
+/language/english/mail_template/welcome.tpl
+/modules/system/language/english/admin/avatars.php
+/modules/system/language/english/admin/banners.php
+/modules/system/language/english/admin/blocksadmin.php
+/modules/system/language/english/admin/comments.php
+/modules/system/language/english/admin/preferences.php
+/modules/system/language/english/admin/userrank.php
+/modules/system/language/english/admin/users.php
+/modules/system/language/english/help/mailusers.html
+/modules/system/language/english/help/preferences.html
+/modules/system/language/english/admin.php
+/modules/system/language/english/blocks.php
+/modules/system/language/english/modinfo.php
+/modules/system/themes/default/language/english/admin.php
+/modules/system/themes/zetadigme/language/english/admin.php
+/themes/suico/language/english/main.php
+/themes/zetagenesis/language/english/main.php
+
+
+===============================
+2011/10/05: Version 2.5.4 Beta
+===============================
+- opdateret flere engelske oversættelser (DCrussader/Mamba)
+- slettet sprog/engelsk/calendar.php _CAL_DEF_DATE_FORMAT
+- slettet sprog/engelsk/calendar.php _CAL_TT_DATE_FORMAT
+- slettede moduler/system/language/english/admin/users.php _AM_SYSTEM_USERS_NAV_MANAGER
+- slettede moduler/system/language/english/admin/preferences.php _MD_AM_LOADINGIMG
+- slettede moduler/system/language/english/admin/preferences.php _MD_AM_CHNGUTHEME
+- slettede moduler/pm/language/english/admin/main.php _MD_PM_RECEIVE, _MD_PM_POST, _MD_PM_READBOX, _MD_PM_RSAVEBOX, _MD_PM_SENTBOX, _MD_PM_PSAVEBOX, _MD_PM_SAVED, _MD_PM_TOC
+- tilføjet /modules/profile/language/english/admin.php _PROFILE_AM_ACTION
+- tilføjet /modules/profile/language/english/main.php _PROFILE_MI_ABOUT
+- tilføjet /modules/profile/language/english/main.php _PROFILE_MI_HOME
+- tilføjet /modules/pm/language/english/modinfo.php _MI_PM_ABOUT
+- tilføjede moduler/system/language/english/admin/users.php _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE
+- tilføjet sprog/engelsk/user.php _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/language/english/modinfo.php
+- tilføjet define($constpref.'_STOPFORUMSPAM_ACTION','Stop Forum Spam');
+- added define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Tjekker POST-data mod spammere registreret på www.stopforumspam.com database. Kræver php CURL lib.');
+
+
+
+===============================
+2011/09/06: Version 2.5.2 RC
+===============================
+ - tilføjet sprog/engelsk/misc.php _MSC_CLICK_TO_OPEN_IMAGE, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_IMAGE
+ - tilføjet sprog/engelsk/pmsg.php _MD_PM_SURE_TO_DELETE, _MD_PM_READ
+ - tilføjede moduler/pm/language/english/admin/main.php _MD_PM_READ, _MD_PM_SUBJECT_ICONS
+ - modules\system/language/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - fjernede moduler/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+ - fjernede moduler/system/language/english/admin/blocksadmin.php _AM_SYSTEM_BLOCKS_SAVE
+ - tilføjet sprog/engelsk/calendar.php _CAL_DEF_DATE_FORMAT
+ - tilføjet sprog/engelsk/calendar.php _CAL_TT_DATE_FORMAT
+
+===============================
+2011/03/15: Version 2.5.1 RC
+===============================
+
+Tilføjede sprogkonstanter:
+  modules/system/language/english/admin/images.php _AM_SYSTEM_IMAGES_URL
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+
+Ændrede sprogkonstanter:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  modules/system/language/english/helper/help_center.html, modulesadmin.html
+
+Fjernede sprogkonstanter:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_GEN_LICENSE_TEXT, _POOXYGEN_BYTE, _CE_FORGEYWER
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_GEN_LICENSE_TEXT, _POOXYGEN_BYTE, _CE_FORGEYWER
